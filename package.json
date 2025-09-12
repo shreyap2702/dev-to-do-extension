@@ -1,0 +1,30 @@
+{
+  "name": "dev-todo-list",
+  "displayName": "Dev Todo List",
+  "description": "A simple to-do list for developers.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "activationEvents": [
+    "onCommand:dev-todo-list.addTask",
+    "onView:dev-todo-list.treeView"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "dev-todo-list.addTask",
+        "title": "Add Task"
+      }
+    ],
+    "views": {
+      "explorer": [
+        {
+          "id": "dev-todo-list.treeView",
+          "name": "Dev To-Do List"
+        }
+      ]
+    }
+  }
+}
