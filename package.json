@@ -22,9 +22,19 @@
       "explorer": [
         {
           "id": "dev-todo-list.treeView",
-          "name": "Dev To-Do List"
+          "name": "Dev To-Do List",
+          "contextualTitle": "Dev To-Do List"
         }
       ]
+    },
+    "menus": {
+        "view/title": [
+            {
+                "command": "dev-todo-list.addTask",
+                "when": "view == dev-todo-list.treeView",
+                "group": "navigation"
+            }
+        ]
     }
   }
 }
